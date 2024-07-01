@@ -1,0 +1,152 @@
+
+.login-container {
+    width: 24vw;
+    height: 26vw;
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    z-index: 3;
+    margin-left: 6vw;
+    top: 19vw;
+    font-family: "Inter", sans-serif;
+}
+
+.login-txt {
+    font-weight: 600;
+    font-size: 2vw;
+    position: absolute;
+    left: 0.76vw;
+    top: 2.2vw;
+}
+
+.wlcome-txt {
+    font-weight: 400;
+    font-size: .92vw;
+    position: absolute;
+    left: 0.765vw;
+    top: 5.6vw;
+}
+
+.emp-id-label {
+    font-weight: 500;
+    position: absolute;
+    font-size: .81vw;
+    left: .71vw;
+    top: 8.67vw;
+    color: #344054;
+}
+.emp-id-inpt {
+    border-radius: 8px;
+    border-color: rgb(208, 213, 221);
+    font-weight: 500;
+    position: absolute;
+    width: 22.4vw;
+    height: 2.4vw;
+    left: .81vw;
+    top: 10vw;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
+.remember-me {
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.81vw;
+    left: 2.1vw;
+    top: 19.2vw;
+
+}
+
+.forgt-pwd {
+    position: absolute;
+    font-weight: 600;
+    left: 17vw;
+    top: 19.2vw;
+    font-size: .8vw;
+}
+.submit-btn {
+    position: absolute;
+    background-color: #ED1D25;
+    color: white;
+    font-weight: 600;
+    left: 1vw;
+    top: 15vw;
+    width: 22.8vw;
+    height: 3.5vw;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+    box-shadow: 1px 1px 2px rgba(16, 24, 40, 0.5);
+    border: none;
+}
+
+.submit-btn:disabled {
+    background-color: #E6E6E6;
+    color: white;
+}
+
+.error-msg {
+    position: absolute;
+    left: 1.7vw;
+    top: 20vw;
+}
+
+/* @media only screen and (max-width : 767px) {
+    .login-container {
+        width: 86vw;
+        height: 85vw;
+        position: absolute;
+        z-index: 3;
+        margin-left: 6vw;
+        top: 65vw;
+        font-family: "Inter", sans-serif;
+    }
+
+    .submit-btn {
+        left: 3vw;
+        top: 52vw;
+        width: 82vw;
+        height: 11.2vw;       
+        font-size: 4vw;
+    }
+
+    .emp-id-inpt {
+        border-radius: 8px;
+        border-color: rgb(208, 213, 221);
+        font-weight: 500;
+        position: absolute;
+        width: 77.6vw;
+        height: 10.4vw;
+        left: 2.81vw;
+        top: 23vw;
+        font-size: 4vw;
+        padding-left: 3vw;
+    }
+
+    .emp-id-label {
+        font-weight: 500;
+        position: absolute;
+        font-size: 3.4vw;
+        left: 3.71vw;
+        top: 16.6vw;
+        color: #344054;
+    }
+
+    .login-txt {
+        font-weight: 600;
+        font-size: 6vw;
+        position: absolute;
+        left: 3.2vw;
+        top: 4.2vw;
+    }
+
+    .wlcome-txt {
+        display: none;
+    }
+
+    .error-msg {
+        position: absolute;
+        left: 3.7vw;
+        top: 67vw;
+    }
+
+    
+}
+ */

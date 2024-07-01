@@ -1,0 +1,495 @@
+.dashboard-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1vw;
+}
+
+.vertical-1 {
+    position: absolute;
+    width: 77.4vw;
+    top: 4.8vw;
+    height: 0.1vw;
+    left: 19.5vw;
+    background-color: #ED1D25;
+    z-index: 3;
+}
+
+.emp-divider {
+    position: absolute;
+    width: 0.1vw;
+    background-color: #BBBBBB;
+    left: 9.5vw;
+    top: 1vw;
+    height: 11vw;
+}
+
+.emp-divider-2 {
+    position: absolute;
+    width: 0.1vw;
+    background-color: #BBBBBB;
+    left: 30.1vw;
+    top: 0vw;
+    height: 13vw;
+}
+
+.vertical-2 {
+    position: absolute;
+    width: 22vw;
+    top: 4.4vw;
+    height: 0.091vw;
+    left: 1.1vw;
+    background-color: #3E3E3E;
+    z-index: 3;
+}
+
+.horizontal-1 {
+    position: absolute;
+    width: .1vw;
+    height: 2.2vw;
+    left: 13.6vw;
+    top: 1.7vw;
+    background-color: #C9C9C9;
+    z-index: 3;
+}
+
+.logo-birla {
+    position: absolute;
+    z-index: 2;
+    width: 11vw;
+    height: auto;
+    top: 2.5vw;
+    left: 1.7vw;
+}
+
+.logo-gmmco {
+    position: absolute;
+    z-index: 2;
+    width: 8vw;
+    top: 0.51vw;
+    height: auto;
+    left: 14vw;
+}
+
+.logout-btn {
+    position: absolute;
+    background-color: #ED1D25;
+    color: white;
+    font-weight: 600;
+    left: 90vw;
+    top: 1.92vw;
+    width: 5.2vw;
+    height: 2.1vw;
+    border-radius: .51vw;
+    font-size: 0.8vw;
+    box-shadow: 1px 1px 2px rgba(16, 24, 40, 0.5);
+    border: none;
+    line-height: 2vw;
+}
+
+.logout-txt {
+    left: 1.9vw;
+    top: .03vw;
+    position: absolute;
+}
+
+.logout-icon {
+    position: absolute;
+    width: 1.04vw;
+    height: auto;
+    left: 0.5vw;
+    top: 0.51vw;
+}
+
+.profile-container {
+    position: absolute;
+    width: 94vw;
+    height: 13vw;
+    border-color: #BBBBBB;
+    border-radius: 0.75vw;
+    border-width: 0.1vw;
+    border-style: solid;
+    z-index: 4;
+    left: 2vw;
+    top: 6vw;
+}
+
+.current-container {
+    position: absolute;
+    width: 26vw;
+    height: 11.1vw;
+    border-color: #BBBBBB;
+    border-radius: 0.75vw;
+    border-width: 0.1vw;
+    border-style: solid;
+    z-index: 4;
+    left: 34vw;
+    top: 0.6vw;
+    box-shadow: 1px 6px 2px rgba(0, 0, 0, 0.12);
+    background-color: #FDFAFA;
+}
+
+.target-container {
+    position: absolute;
+    width: 26vw;
+    height: 11.1vw;
+    border-color: #BBBBBB;
+    border-radius: 0.75vw;
+    border-width: 0.1vw;
+    border-style: solid;
+    z-index: 4;
+    left: 64vw;
+    top: 0.6vw;
+    box-shadow: 1px 6px 2px rgba(0, 0, 0, 0.12);
+    background-color: #FDFAFA;
+}
+
+.current-title {
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    font-weight: 600;
+    font-size: 1vw;
+    width: 9vw;
+    color: #545454;
+}
+.current-vertical {
+    position: absolute;
+    width: 24vw;
+    top: 3.8vw;
+    height: 0.1vw;
+    left: 0.51vw;
+    background-color: #ED1D25;
+}
+.current-content {
+    position: absolute;
+    left: 1vw;
+    top: 4.6vw;
+    font-weight: 500;
+    font-size: 2vw;
+    width: 24vw;
+    text-align: left;
+    color: #4A4848;
+}
+.target-title {
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    font-weight: 600;
+    font-size: 1vw;
+    width: 9vw;
+    color: #545454;
+}
+.target-vertical {
+    position: absolute;
+    width: 24vw;
+    top: 3.8vw;
+    height: 0.1vw;
+    left: 0.51vw;
+    background-color: #ED1D25;
+}
+.target-content {
+    position: absolute;
+    left: 1vw;
+    top: 4.6vw;
+    font-weight: 500;
+    font-size: 2vw;
+    width: 24vw;
+    text-align: left;
+    color: #4A4848;
+}
+
+.empl-lbl-txt {
+    position: absolute;
+    left: 0.6vw;
+    top: 1.1vw;
+    font-weight: 600;
+    font-size: 0.81vw;
+    color: black;
+}
+.id-lbl-txt {
+    position: absolute;
+    left: 0.7vw;
+    top: 1.85vw;
+    font-weight: 600;
+    font-size: 2vw;
+    color: #ED1D25;
+}
+.emp-content {
+    position: absolute;
+    left: 10vw;
+    width: 20.2vw;
+    height: 3.2vw;
+    //background-color: rgba(0, 0, 0, 0.1);
+}
+
+.emp-id-content {
+    position: absolute;
+    left: .7vw;
+    top: 5.76vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+}
+
+.emp-name {
+    top: 1vw;
+    border-bottom: 0.13vw solid #BBBBBB;
+}
+
+.loc {
+    top: 4.7vw;
+    border-bottom: 0.13vw solid #BBBBBB;
+}
+
+.rm {
+    top: 8.4vw;
+}
+.content-1 {
+    position: absolute;
+    left: .9vw;
+    top: 0.1vw;
+    font-weight: 600;
+    font-size: .79vw;
+    color: black;
+
+}
+.content-2 {
+    position: absolute;
+    left: 1vw;
+    top: 1.4vw;
+    font-weight: 400;
+    font-size: 1vw;
+    color: black;
+}
+
+.fin-year-container {
+    position: absolute;
+    left: 2vw;
+    top: 20vw;
+    width: 94.1vw;
+    height: 21vw;
+    background-color: rgba(255, 239, 239);
+    border-radius: 1vw;
+}
+
+.fin-container {
+    position: absolute;
+    top: 1.4vw;
+    border-radius: 0.9vw;
+    width: 28.3vw;
+    height: 18.3vw;
+    background-color: rgba(255,255,255);
+    box-shadow: 1px 45px 112px rgba(0, 0, 0, 0.06);
+}
+
+.fy23-container {
+    left: 1.4vw;
+}
+
+.fy24-container {
+    left: 33vw;
+}
+
+.fy25-container {
+    left: 64.5vw;
+}
+
+.fin-header {
+    background-color: #F5F5F5;
+    width: 28.3vw;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-width: 0.1vw;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0 0 0);
+    font-weight: 700;
+    font-size: 1.25vw;
+    text-align: center;
+    color: rgb(99 99 99);
+    height: 2.1vw;
+    line-height: 2.2vw;
+}
+
+.fin-container table th {
+    font-weight: 500;
+    text-align: left;
+    font-size: 0.81vw;
+    padding-left: 1vw;
+    height: 2vw;
+    background-color: #F5F5F5;
+    width: 13vw;
+}
+
+.fin-container table td {
+    font-weight: 400;
+    text-align: left;
+    font-size: 0.91vw;
+    padding-left: 1vw;
+    height: 3.2vw;
+    width: 13vw;
+    word-wrap: break-word;
+    color: #333333;
+    border-top: .1vw solid #FFCFCF;
+}
+
+.hist-container {
+    position: absolute;
+    left: 2vw;
+    top: 42vw;
+    width: 94.2vw;
+}
+
+.hist-title {
+    text-align: center;
+    color: #6C6C6C;
+    font-weight: 600;
+    font-size: 1.73vw;
+    position: absolute;
+    left: 38.5vw;
+    top: 0.8vw;
+    background-color: white;
+    width: 16vw;
+}
+
+.hist-container table {
+    position: absolute;
+    left: 0.1vw;
+    top: 4.3vw;
+    border: .1vw solid black;
+    
+}
+
+.hist-container table tr {
+    border-top: 0.1vw solid black;
+}
+
+.hist-container table th {
+    background-color: #919191;
+    color: white;
+    font-weight: 400;
+    font-size: 1vw;
+    height: 1.5vw;
+    width: 19vw;
+    text-align: left;
+    border: none;
+}
+
+.hist-container table td {
+    font-weight: 400;
+    font-size: 1vw;
+    height: 1.5vw;
+    border-top: .1vw solid black;
+}
+
+.hist-divider {
+    height: 0.1vw;
+    background-color: #ED1D25;
+    position: absolute;
+    width: 94vw;
+    left: 0vw;
+    top: 1.89vw;
+}
+
+.current-progress-container, .target-progress-container {
+    position: absolute;
+    width: 16.5vw;
+    height: 3vw;
+    left: 0.5vw;
+    top: 7.3vw;
+    background-color: #EFEFEF;
+    color: #545454;
+    border-radius: .25vw;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 1vw;
+    top: 0.5vw;
+    width: 14vw;
+    background-color: #BCB9B9;
+    block-size: .5vw;
+    inline-size: 14vw;
+    border-radius: 1vw;
+}
+.progress-percent {
+    position: absolute;
+    left: 1vw;
+    top: 1.4vw;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #BCB9B9;
+    border-radius: 1vw;
+  }
+  progress::-webkit-progress-value {
+    background-color: #ED1D25;
+    border-radius: 1vw;
+  }
+ 
+  .course-search {
+    float: right;
+    margin-right: 0.2vw;
+  }
+
+
+ /*  @media only screen and (max-width : 767px) {
+    .logo-gmmco {
+        position: absolute;
+        z-index: 2;
+        width: 25vw;
+        top: 5vw;
+        height: auto;
+        left: 71.2vw;
+    }
+
+    .logo-birla {
+        position: absolute;
+        z-index: 2;
+        width: 35vw;
+        height: auto;
+        top: 10.7vw;
+        left: 4vw;
+    }
+
+    .vertical-2 {
+        position: absolute;
+        width: 91vw;
+        top: 17.4vw;
+        height: 0.5vw;
+        left: 3.7vw;
+        background-color: #3E3E3E;
+        z-index: 3;
+    }
+
+    .vertical-1 {
+        position: absolute;
+        width: 31vw;
+        top: 15.5vw;
+        height: 0.5vw;
+        left: 40vw;
+        background-color: #ED1D25;
+        z-index: 3;
+    }
+
+    .horizontal-1 {
+        display: none;
+    }
+
+    .profile-container {
+        position: absolute;
+        width: 94vw;
+        height: 13vw;
+        border-color: #BBBBBB;
+        border-radius: 0.75vw;
+        border-width: 0.1vw;
+        border-style: solid;
+        z-index: 4;
+        left: 2vw;
+        top: 6vw;
+    }
+
+  } */

@@ -1,0 +1,18 @@
+<app-loginbg></app-loginbg>
+
+<div class="login-container">
+    <div class="login-txt">Log in</div>
+    <div class="wlcome-txt">Welcome back! Please enter your details.</div>
+    <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+        <label class="emp-id-label" for="emp-id">Employee ID </label>
+        <input class="emp-id-inpt" id="emp-id" type="text" formControlName="empid" autofocus>
+        <!-- <label for="pwd">Password </label>
+        <input id="pwd" type="password" formControlName="pwd">
+        <input type="checkbox" name="remember">
+        <label class="remember-me">Remember Me</label>
+          <div class="forgt-pwd">Forgot password</div> -->
+        <button class="submit-btn" [disabled]="!loginForm.valid" type="submit">Log in</button>
+        <div class="error-msg" [ngStyle]="{'display':invalidLogin?'block':'none'}" style="color: red;">{{errorMsg}}</div>
+    </form>
+</div>
+
