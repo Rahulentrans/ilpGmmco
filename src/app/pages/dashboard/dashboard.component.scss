@@ -1,11 +1,19 @@
 .dashboard-container {
     position: relative;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 110vh;
     font-family: "Inter", sans-serif;
-    margin-bottom: 1vw;
 }
 
+.page-header {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+    top: 1.5vw;
+
+}
 .vertical-1 {
     position: absolute;
     width: 77.4vw;
@@ -111,6 +119,12 @@
     border-width: 0.1vw;
     border-style: solid;
     z-index: 4;
+    left: 2vw;
+    top: 6vw;
+}
+
+.level-container {
+    position: absolute;
     left: 2vw;
     top: 6vw;
 }
@@ -290,6 +304,7 @@
 
 .fy24-container {
     left: 33vw;
+    border: .1vw solid red;
 }
 
 .fy25-container {
@@ -356,7 +371,7 @@
 .hist-container table {
     position: absolute;
     left: 0.1vw;
-    top: 4.3vw;
+    top: 8.1vw;
     border: .1vw solid black;
     
 }
@@ -435,13 +450,53 @@ progress::-webkit-progress-bar {
     margin-right: 0.2vw;
   }
 
+  .search-container {
+    position: absolute;
+    left: 68vw;
+    top: 3.2vw;
+    width: 26vw;
+    height: 3.5vw;
+    border: 0.1vw solid #D0D5DD;
+    border-radius: 0.3vw;
+    font-family: "Inter", sans-serif;
+}
 
- /*  @media only screen and (max-width : 767px) {
+input {
+    font-family: "Inter", sans-serif;
+}
+.search-icon {
+    position: absolute;
+    left: 1.5vw;
+    top: 1vw;
+    width: 2vw;
+    height: auto;
+}
+.search-input {
+    position: absolute;
+    left: 4vw;
+    top: 0.9vw;
+    border: none;
+    font-weight: 300;
+    
+    font-size: 1.5vw;
+}
+
+.horizontal-divider {
+    display: none;
+}
+
+.level-divider {
+    display: none;
+}
+/*   @media only screen and (max-width : 767px) {
+
+    
+
     .logo-gmmco {
         position: absolute;
         z-index: 2;
         width: 25vw;
-        top: 5vw;
+        top: 2.8vw;
         height: auto;
         left: 71.2vw;
     }
@@ -451,14 +506,14 @@ progress::-webkit-progress-bar {
         z-index: 2;
         width: 35vw;
         height: auto;
-        top: 10.7vw;
+        top: 7.7vw;
         left: 4vw;
     }
 
     .vertical-2 {
         position: absolute;
         width: 91vw;
-        top: 17.4vw;
+        top: 14.4vw;
         height: 0.5vw;
         left: 3.7vw;
         background-color: #3E3E3E;
@@ -468,7 +523,7 @@ progress::-webkit-progress-bar {
     .vertical-1 {
         position: absolute;
         width: 31vw;
-        top: 15.5vw;
+        top: 12.5vw;
         height: 0.5vw;
         left: 40vw;
         background-color: #ED1D25;
@@ -482,14 +537,249 @@ progress::-webkit-progress-bar {
     .profile-container {
         position: absolute;
         width: 94vw;
-        height: 13vw;
+        height: 24vw;
         border-color: #BBBBBB;
-        border-radius: 0.75vw;
+        border-radius: 2vw;
         border-width: 0.1vw;
         border-style: solid;
         z-index: 4;
         left: 2vw;
-        top: 6vw;
+        top: 17vw;
     }
 
+    .level-container {
+        position: absolute;
+        left: 2.2vw;
+        top: 43vw;
+        border: 0.1vw solid #BBBBBB;
+        width: 93.5vw;
+        height: 35vw;
+        border-radius: 1vw;
+    }
+
+    .level-divider {
+        position: absolute;
+        left: 47.3vw;
+        top: 0.5vw;
+        width: 0.3vw;
+        height: 33vw;
+        background-color: #BBBBBB;
+        display: block;
+    }
+    .current-container {
+        position: absolute;
+        width: 46.4vw;
+        height: 11.1vw;
+        z-index: 4;
+        left: 1vw;
+        top: 0.6vw;
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    .target-container {
+        position: absolute;
+        width: 46.4vw;
+        height: 11.1vw;
+        z-index: 4;
+        left: 48vw;
+        top: 0.6vw;
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    .current-progress-container, .target-progress-container {
+        position: absolute;
+        width: 44vw;
+        height: 3vw;
+        left: 0.5vw;
+        top: 27.3vw;
+        background: none;
+        color: #545454;
+        border-radius: none;
+    }
+
+    .progress-bar {
+        position: absolute;
+        left: 1.7vw;
+        top: 0vw;
+        width: 14vw;
+        background-color: #BCB9B9;
+        block-size: 1vw;
+        inline-size: 36.5vw;
+        border-radius: 1vw;
+    }
+
+    .progress-percent {
+        position: absolute;
+        left: 0vw;
+        top: 1.9vw;
+        font-weight: 400;
+        font-size: 3.4vw;
+    }
+
+    .current-content {
+        position: absolute;
+        left: 1.5vw;
+        top: 15.6vw;
+        font-weight: 500;
+        font-size: 5vw;
+        width: 50vw;
+        text-align: left;
+        color: #4A4848;
+    }
+    .target-content {
+        position: absolute;
+        left: 1.5vw;
+        top: 15.6vw;
+        font-weight: 500;
+        font-size: 5vw;
+        width: 47vw;
+        text-align: left;
+        color: #4A4848;
+    }
+
+
+    .current-vertical {
+        position: absolute;
+        width: 42vw;
+        top: 10.6vw;
+        height: 0.3vw;
+        left: 2.51vw;
+        background-color: #ED1D25;
+    }
+    .target-vertical {
+        position: absolute;
+        width: 42vw;
+        top: 10.6vw;
+        height: 0.3vw;
+        left: 2.51vw;
+        background-color: #ED1D25;
+    }
+
+    .current-title {
+        position: absolute;
+        left: 3vw;
+        top: 2vw;
+        font-weight: 600;
+        font-size: 3vw;
+        width: 37vw;
+        color: #545454;
+    }
+
+    .target-title {
+        position: absolute;
+        left: 3vw;
+        top: 2vw;
+        font-weight: 600;
+        font-size: 3vw;
+        width: 37vw;
+        color: #545454;
+    }
+
+    .empl-lbl-txt {
+        position: absolute;
+        left: 26.7vw;
+        top: 1.9vw;
+        font-weight: 600;
+        font-size: 3.6vw;
+        color: #ED1E26;
+    }
+    
+    .id-lbl-txt {
+        position: absolute;
+        left: 44.7vw;
+        top: 1.9vw;
+        font-weight: 600;
+        font-size: 3.6vw;
+        color: #ED1D25;
+    }
+    
+    
+    .emp-id-content {
+        position: absolute;
+        left: 51.7vw;
+        top: 1.76vw;
+        font-weight: 600;
+        font-size: 3.5vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .content-1 {
+        position: absolute;
+        left: 0.9vw;
+        top: 0.1vw;
+        font-weight: 500;
+        font-size: 2.79vw;
+        color: #ED1E26;
+        width: 22vw;
+    }
+
+    .horizontal-divider {
+        display: block;
+        position: absolute;
+        left: 0vw;
+        top: 7vw;
+        width: 94vw;
+        height: 0.2vw;
+        background-color: #BBBBBB;
+    }
+
+    .emp-name {
+        top: 9vw;
+        left: 3vw;
+        border: none;
+    }
+
+    .loc {
+        top: 9vw;
+        left: 35vw;
+        border: none;
+    }
+
+    .rm {
+        top: 9vw;
+        left: 65vw;
+    }
+
+    .content-1 {
+        position: absolute;
+        left: 0.9vw;
+        top: 0vw;
+        font-weight: 500;
+        font-size: 3vw;
+        color: #ED1E26;
+        width: 25vw;
+    }
+
+    .content-2 {
+        position: absolute;
+        left: 1vw;
+        top: 5.6vw;
+        font-weight: 600;
+        font-size: 4vw;
+        color: black;
+        width: 27vw;
+        line-height: 1;
+    }
+
+    .emp-divider {
+        position: absolute;
+        width: 0.5vw;
+        background-color: #BBBBBB;
+        left: 31.8vw;
+        top: 8vw;
+        height: 13vw;
+    }
+
+    .emp-divider-2 {
+        position: absolute;
+        width: 0.5vw;
+        background-color: #BBBBBB;
+        left: 63.8vw;
+        top: 8vw;
+        height: 13vw;
+    }
   } */

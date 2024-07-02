@@ -28,8 +28,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.router.navigate(['login']);
   }
 
-  onCourseSearch(eve:Event) {
-    this.isSearch = !this.isSearch;
+  onSearchClick(elem: HTMLInputElement) {
+    elem.focus();
   }
 
   onKeyChange(eve:Event) {

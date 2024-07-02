@@ -8,6 +8,8 @@
   <div class="horizontal-1"></div>
   <img class="logo-birla" src="./assets/images/ck_birla_logo.png" />
   <img class="logo-gmmco" src="./assets/images/gmmco_logo.png" />
+  
+  <div class="page-header">Individual Learning Plan</div>
   <div class="logout-btn" (click)="onLogoutClick($event)">
     <img class="logout-icon" src="./assets/images/logout_icon.png" /><span
       class="logout-txt"
@@ -18,6 +20,7 @@
     <div class="empl-lbl-txt">Employee</div>
     <div class="id-lbl-txt">ID</div>
     <div class="emp-id-content">GMM{{ employeeInfo.empid }}</div>
+    <div class="horizontal-divider"></div>
     <div class="emp-divider"></div>
     <div class="emp-divider-2"></div>
     <div class="emp-name emp-content">
@@ -33,7 +36,8 @@
       <div class="content-1">RM Name</div>
       <div class="content-2">{{ employeeInfo.reportingmanagername }}</div>
     </div>
-
+</div>
+<div class="level-container">
     <div class="current-container">
       <div class="current-title">Current Certification Level</div>
       <div class="current-vertical"></div>
@@ -44,9 +48,9 @@
       </div>
       
     </div>
-
+<div class="level-divider"></div>
     <div class="target-container">
-      <div class="target-title">Targetted Certification Level</div>
+      <div class="target-title">Targeted Certification Level</div>
       <div class="target-vertical"></div>
       <div class="target-content">{{ employeeInfo.targetLevel }}</div>
       <div class="target-progress-container">
@@ -101,10 +105,10 @@
   <div class="hist-container">
     <div class="hist-divider"></div>
     <div class="hist-title">Training History</div>
-  <!--   <div class="search-container">
-      <img src="./assets/images/search_icon.png" alt="">
-      <input (keyup)="onKeyChange($event)" type="text" name="search"/>
-    </div> -->
+    <div (click)="onSearchClick(searchinp)" class="search-container">
+      <img class="search-icon" src="./assets/images/search_icon.png" alt="">
+      <input #searchinp class="search-input" placeholder="Search" (keyup)="onKeyChange($event)" type="text" name="search"/>
+    </div>
     <table>
       <thead>
         <tr>
@@ -125,7 +129,7 @@
           <td>{{ course.year }}</td>
         </tr>
         <tr>
-          <td></td>
+          <td>{{(filteredHistory.length == 0?'Courses Not Available':'')}}</td>
           <td></td>
           <td></td>
           <td></td>
@@ -133,5 +137,5 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> 
 </div>

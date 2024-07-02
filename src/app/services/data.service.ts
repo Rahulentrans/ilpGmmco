@@ -128,6 +128,7 @@ export class DataService {
     this.employeeParsedData.completedCourseList = this.sortByDate(this.courseList.filter((item:any) => item.status == 'Completed'));
     this.employeeParsedData.notCompletedCourseList = this.courseList.filter((item:any) => item.status == 'Not Completed');
     this.getFinancialYearList();
+    console.log(this.employeeParsedData);
 
    return this.employeeParsedData;
   }
@@ -147,6 +148,13 @@ export class DataService {
     let temp2024LastIndex = 0;
 
     this.employeeParsedData.fin2023 = tempFin2023.length > 4?tempFin2023.slice(0, 4): tempFin2023;
+
+    if(tempFin2023.length == 0) {
+      this.employeeParsedData.fin2023.push({coursename: 'N/A', status: 'N/A'});
+      this.employeeParsedData.fin2023.push({coursename: 'N/A', status: 'N/A'});
+      this.employeeParsedData.fin2023.push({coursename: 'N/A', status: 'N/A'});
+      this.employeeParsedData.fin2023.push({coursename: 'N/A', status: 'N/A'});
+    }
     console.log(tempFin2024.length)
     if(tempFin2024.length > 4) {
       this.employeeParsedData.fin2024 = tempFin2024.slice(0, 4);
