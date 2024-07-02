@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 currentPos = '';
 duration = '';
 
-isTableView = true;
+isTableView = false;
 
   constructor(public router:Router, public dataService: DataService) {
 
